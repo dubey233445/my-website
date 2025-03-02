@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Robothon - K.R. Mangalam University</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Reuse existing styles from main CSS */
+        :root {
+            --neon-blue: #0ff;
+            --neon-purple: #90f;
+            --dark-bg: #0a0a0a;
+            --dark-gray: #1a1a1a;
+        }
+
+        /* about.css - Full Styles for About Page */
+:root {
+    --neon-blue: #0ff;
+    --neon-purple: #90f;
+    --dark-bg: #0a0a0a;
+    --dark-gray: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: #fff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+.navbar {
+    padding: 1rem 5%;
+    background: rgba(10, 10, 10, 0.95);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--neon-purple);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.about-container {
+    max-width: 1200px;
+    margin: 100px auto 2rem;
+    padding: 0 2rem;
+}
+
+.university-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--neon-blue);
+}
+
+.event-highlight {
+    background: linear-gradient(45deg, var(--neon-purple), var(--neon-blue));
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(144, 0, 255, 0.3);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.category-card {
+    background: var(--dark-gray);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--neon-purple);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.important-notes {
+    border-left: 4px solid var(--neon-blue);
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    background: rgba(0, 255, 255, 0.05);
+}
+
+.coordinators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        background: var(--dark-gray);
+        width: 100%;
+        height: calc(100vh - 60px);
+        transition: 0.3s;
+        padding: 2rem 0;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        padding: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-container {
+        margin-top: 80px;
+        padding: 0 1rem;
+    }
+
+    .event-highlight {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-highlight h1 {
+        font-size: 2rem;
+    }
+    
+    .category-card {
+        padding: 1rem;
+    }
+    
+    .important-notes {
+        padding: 1rem;
+    }
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 100px auto 2rem;
+            padding: 0 2rem;
+        }
+
+        .university-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .event-highlight {
+            background: linear-gradient(45deg, var(--neon-purple), var(--neon-blue));
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .category-card {
+            background: var(--dark-gray);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid var(--neon-purple);
+        }
+
+        .important-notes {
+            border-left: 4px solid var(--neon-blue);
+            padding: 1rem;
+            margin: 2rem 0;
+        }
+
+        .coordinators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                margin-top: 80px;
+                padding: 0 1rem;
+            }
+            
+            .event-highlight {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Same as main page) -->
+    <nav class="navbar">
+        <i class="fas fa-bars menu-toggle"></i>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-robot"></i> Home</a>
+            <a href="#"><i class="fas fa-info-circle"></i> About</a>
+            <a href="event.html"><i class="fas fa-calendar-alt"></i> Events</a>
+            <a href="#gallery"><i class="fas fa-photo-video"></i> Gallery</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <div class="university-header">
+            <h2>K.R. MANGALAM UNIVERSITY</h2>
+            <p>THE COMPLETE WORLD OF EDUCATION</p>
+        </div>
+
+        <div class="event-highlight">
+            <h1>ROBOTHON 2025</h1>
+            <p>AN INNOVATIVE ROBOTIC COMPETITION</p>
+            <p>Date: 23rd April 2025</p>
+            <p>Venue: K R MANGALAM UNIVERSITY CAMPUS</p>
+        </div>
+
+        <h3>Competition Categories</h3>
+        <div class="categories-grid">
+            <div class="category-card">
+                <h4>Line Following Robots</h4>
+                <p>Test your robot's path navigation skills</p>
+            </div>
+            <div class="category-card">
+                <h4>Object Sorting Robots</h4>
+                <p>Demonstrate object recognition capabilities</p>
+            </div>
+            <div class="category-card">
+                <h4>Problem Solving Robots</h4>
+                <p>Showcase innovative automation solutions</p>
+            </div>
+            <div class="category-card">
+                <h4>Drone Racing</h4>
+                <p>Aerial speed and maneuverability challenge</p>
+            </div>
+        </div>
+
+        <div class="important-notes">
+            <h4>Important Notes</h4>
+            <p>» Participants must bring their own robots</p>
+            <p>» No registration fees</p>
+            <p>» Last date for registration: 15th April 2025</p>
+        </div>
+
+        <h3>Event Coordinators</h3>
+        <div class="coordinators-grid">
+            <div class="category-card">
+                <h4>Convener</h4>
+                <p>Dr. Anshika</p>
+            </div>
+            <div class="category-card">
+                <h4>Faculty Coordinators</h4>
+                <p>Dr. Rakhi Dua</p>
+                <p>Dr. Appurva Jain</p>
+            </div>
+            <div class="category-card">
+                <h4>Student Coordinators</h4>
+                <p>Mr. Nirdesh</p>
+                <p>Ms. Taran Burni</p>
+                <p>Mr. Varun (971754200)</p>
+            </div>
+        </div>
+
+        <div class="event-highlight" style="margin-top: 2rem;">
+            <h4>Scan QR Code to Register</h4>
+            <p>Visit our website: www.krmangalam.edu.in</p>
+        </div>
+    </div>
+
+    <script>
+        // Reuse existing JavaScript from main page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu on click outside
+            document.addEventListener('click', (e) => {
+                if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

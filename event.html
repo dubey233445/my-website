@@ -1,0 +1,261 @@
+
+<link rel="stylesheet" href="styles.css">
+
+<section id="event" class="event-details">
+    <div class="event-container">
+        <!-- University Header -->
+        <div class="university-header">
+            <h2>K.R. MANGALAM UNIVERSITY</h2>
+            <p class="university-tagline">THE COMPLETE WORLD OF EDUCATION</p>
+        </div>
+
+        <!-- Main Event Card -->
+        <div class="main-event-card">
+            <h1 class="event-title neon-text">ROBOTHON</h1>
+            <p class="event-subtitle">AN INNOVATIVE ROBOTIC COMPETITION</p>
+            
+            <div class="event-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar-alt neon-icon"></i>
+                    <span>23rd April 2025</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-map-marker-alt neon-icon"></i>
+                    <span>K R MANGALAM UNIVERSITY CAMPUS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competition Categories -->
+        <div class="categories-grid">
+            <div class="category-card">
+                <i class="fas fa-robot category-icon"></i>
+                <h3>Line Following Robots</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-sort-amount-down category-icon"></i>
+                <h3>Object Sorting Robots</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-puzzle-piece category-icon"></i>
+                <h3>Maze Solving Robots</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-helicopter category-icon"></i>
+                <h3>Drone Racing</h3>
+            </div>
+        </div>
+
+        <!-- Important Note -->
+        <div class="important-note">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>Students must bring their own robots for participation</p>
+        </div>
+
+        <!-- Coordinators Section -->
+        <div class="coordinators-grid">
+            <div class="coordinator-card">
+                <h4><i class="fas fa-user-tie"></i> Convener</h4>
+                <p>Dr. Anshika</p>
+                <p>Dr. Appurva Jain</p>
+            </div>
+            
+            <div class="coordinator-card">
+                <h4><i class="fas fa-users-cog"></i> Event Coordinators</h4>
+                <p>Dr. Rakhi Dua</p>
+                
+            </div>
+            
+            <div class="coordinator-card">
+                <h4><i class="fas fa-user-graduate"></i> Student Coordinators</h4>
+                <p>Mr. Varun (9717542000)</p>
+                <p>Mr. Nirdesh</p>
+                <p>Ms. Taran Burni</p>
+                
+            </div>
+        </div>
+
+        <!-- Registration Section -->
+        <div class="registration-info">
+            <div class="qr-code">
+                <img src="qr.jpg" alt="Registration QR Code">
+                <p>Scan to Register</p>
+            </div>
+            <div class="registration-details">
+                <p class="highlight-text">NO REGISTRATION FEES</p>
+                <p class="deadline-text">Last Date: 15th April 2025</p>
+                <a href="www.krmangalam.edu.in" class="website-link">www.krmangalam.edu.in</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Add to existing CSS */
+.event-details {
+    padding: 4rem 5%;
+    background: var(--dark-bg);
+}
+
+.university-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--neon-purple);
+    padding-bottom: 2rem;
+}
+
+.university-header h2 {
+    color: var(--neon-blue);
+    font-size: 2.5rem;
+    text-shadow: 0 0 15px var(--neon-blue);
+}
+
+.university-tagline {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.main-event-card {
+    background: var(--dark-gray);
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 2rem 0;
+    border: 2px solid var(--neon-purple);
+    box-shadow: 0 0 30px rgba(144, 0, 255, 0.2);
+}
+
+.event-title {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    text-shadow: 0 0 30px var(--neon-blue);
+}
+
+.event-subtitle {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.event-meta {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.category-card {
+    background: var(--dark-gray);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--neon-blue);
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px var(--neon-blue);
+}
+
+.category-icon {
+    font-size: 3rem;
+    color: var(--neon-purple);
+    margin-bottom: 1rem;
+}
+
+.important-note {
+    background: rgba(255, 50, 50, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #ff3232;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.coordinators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.coordinator-card {
+    background: var(--dark-gray);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--neon-purple);
+}
+
+.registration-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.qr-code {
+    text-align: center;
+}
+
+.qr-code img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--neon-blue);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.highlight-text {
+    color: var(--neon-blue);
+    font-size: 1.5rem;
+    text-shadow: 0 0 15px var(--neon-blue);
+}
+
+.deadline-text {
+    color: #ff3232;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.website-link {
+    color: var(--neon-purple);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .event-title {
+        font-size: 2.5rem;
+    }
+    
+    .event-meta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .registration-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>

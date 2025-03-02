@@ -1,0 +1,156 @@
+<section id="prizes" class="prizes-section">
+  <div class="prizes-container">
+      <!-- University Header -->
+      <div class="university-header">
+          <h2>K.R. MANGALAM UNIVERSITY</h2>
+          <p class="university-tagline">THE COMPLETE WORLD OF EDUCATION</p>
+      </div>
+
+      <!-- Main Prizes Card -->
+      <div class="main-prizes-card">
+          <h1 class="prizes-title neon-text">ROBOTHON 2025 PRIZES</h1>
+          <div class="prize-grid">
+              <!-- Track Prizes -->
+              <div class="prize-category">
+                  <div class="prize-icon">
+                      <i class="fas fa-trophy"></i>
+                  </div>
+                  <h3>Track Winners</h3>
+                  <ul class="prize-list">
+                      <li>🥇 1st Prize: ₹50,000</li>
+                      <li>🥈 2nd Prize: ₹30,000</li>
+                      <li>🥉 3rd Prize: ₹20,000</li>
+                  </ul>
+                  <p class="prize-note">(For each competition track)</p>
+              </div>
+
+              <!-- Special Awards -->
+              <div class="prize-category">
+                  <div class="prize-icon">
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Special Awards</h3>
+                  <ul class="prize-list">
+                      <li>🏆 Best Innovation: ₹25,000</li>
+                      <li>💡 Most Efficient Design: ₹15,000</li>
+                      <li>🚀 Future Tech Award: ₹15,000</li>
+                  </ul>
+              </div>
+
+              <!-- Additional Benefits -->
+              <div class="prize-category">
+                  <div class="prize-icon">
+                      <i class="fas fa-award"></i>
+                  </div>
+                  <h3>All Participants Get</h3>
+                  <ul class="prize-list">
+                      <li>📜 Certificate of Participation</li>
+                      <li>🎓 Skill Development Workshop Pass</li>
+                      <li>🤝 Industry Networking Opportunities</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <!-- Registration CTA -->
+      <div class="prize-registration">
+          <div class="qr-code">
+              <img src="qr.jpg" alt="Registration QR Code">
+              <p class="scan-text">Scan to Register - No Fees!</p>
+          </div>
+          <div class="deadline-box">
+              <p class="deadline-text">⏳ Registration Deadline: 15th April 2025</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<style>
+/* Add to existing CSS */
+.prizes-section {
+  padding: 4rem 5%;
+  background: var(--dark-bg);
+}
+
+.main-prizes-card {
+  background: var(--dark-gray);
+  padding: 3rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  border: 2px solid var(--neon-purple);
+  box-shadow: 0 0 30px rgba(144, 0, 255, 0.2);
+}
+
+.prize-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.prize-category {
+  background: #111;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid var(--neon-blue);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.prize-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px var(--neon-blue);
+}
+
+.prize-icon {
+  font-size: 2.5rem;
+  color: var(--neon-purple);
+  margin-bottom: 1rem;
+}
+
+.prize-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.prize-list li {
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.prize-note {
+  color: var(--neon-purple);
+  font-size: 0.9rem;
+}
+
+.prize-registration {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.deadline-box {
+  background: var(--dark-gray);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid var(--neon-blue);
+}
+
+@media (max-width: 768px) {
+  .prize-registration {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .prize-list li {
+      font-size: 1rem;
+  }
+}
+</style>

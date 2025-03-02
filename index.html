@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robothon - Hardware Robotics Competition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <i class="fas fa-bars menu-toggle"></i>
+        <div class="nav-links">
+            <a href="#home"><i class="fas fa-robot"></i> Home</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="event.html"><i class="fas fa-calendar-alt"></i> Events</a>
+            <a href="rules.html"><i class="fas fa-photo-video"></i> Rules</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ROBOTHON 2025</h1>
+            <p>Where Future Engineers Compete</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvPFBdFi6otanBzG2ar-2pKtmhjWGJ3SmzYaKkDrECr-CHNw/viewform?usp=sharing">
+                <button style="padding: 1rem 2rem; margin-top: 2rem; background: var(--neon-purple); border: none; border-radius: 5px; cursor: pointer; color: white; font-size: 1.1rem;">
+                    Register Now
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <!-- <section class="schedule-grid">
+        <div class="schedule-card">
+            <h3>Workshops</h3>
+            <p>March 15-20, 2025</p>
+        </div>
+        <div class="schedule-card">
+            <h3>Qualifiers</h3>
+            <p>April 1-10, 2025</p>
+        </div>
+        <div class="schedule-card">
+            <h3>Grand Finale</h3>
+            <p>May 5, 2025</p>
+        </div>
+    </section>
+
+    Timeline Section -->
+    <!-- <section class="timeline">
+        <div class="timeline-item">
+            <h3>Registration Opens</h3>
+            <p>January 1, 2025</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Team Submission Deadline</h3>
+            <p>February 28, 2025</p>
+        </div>
+    </section> -->
+
+    <script>
+        window.addEventListener('load', () => {
+            // Loader
+            document.querySelector('.loader').style.opacity = '0';
+            setTimeout(() => {
+                document.querySelector('.loader').style.display = 'none';
+            }, 500);
+
+            // Mobile Menu
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu on click outside
+            document.addEventListener('click', (e) => {
+                if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                }
+            });
+
+            // Navbar Scroll Effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.navbar');
+                navbar.classList.toggle('scrolled', window.scrollY > 50);
+            });
+
+            // Animation Observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'slideIn 1s ease forwards';
+                    }
+                });
+            });
+
+            document.querySelectorAll('.timeline-item').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

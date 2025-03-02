@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robothon - Rules & Regulations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#event">Event Details</a>
+            <a href="#registration">Registration</a>
+            <a href="rules.html">Rules</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav> -->
+
+    <!-- Rules Content -->
+    <section class="rules-section">
+        <div class="rules-container">
+            <h2 class="section-title neon-text">Rules & Regulations</h2>
+            
+            <div class="rules-content">
+               <!-- Add to your existing HTML -->
+<section id="rules" class="rules-section">
+  <div class="rules-container">
+      <h2 class="section-title neon-text">Rules & Regulations</h2>
+      
+      <div class="rules-content">
+          <div class="rules-card">
+              <ol class="rules-list">
+                  <li class="rule-item">Designs must be original and created entirely by the team.</li>
+                  <li class="rule-item">Safety guidelines must be strictly followed, and violations may lead to disqualification.</li>
+                  <li class="rule-item">Misconduct, cheating, or tampering is prohibited. Participants must respect others and avoid disrupting the event or harassing organizers and judges.</li>
+                  <li class="rule-item">Damage to property during the event will result in penalties, including disqualification and fines.</li>
+                  <li class="rule-item">In case of ambiguity, the organizers' decision will be final and binding, and no further appeals will be entertained.</li>
+                  <li class="rule-item">Judges' decisions are final. Participants must align their work with the judging criteria.</li>
+                  <li class="rule-item">Participants are encouraged to bring extension cords or power strips for their devices to avoid delays.</li>
+                  <li class="rule-item">This is a competition, not a presentation. Your robots must actively compete with other robots.</li>
+              </ol>
+
+              <div class="rules-note">
+                  <h3 class="note-title">Special Note for Drone Racing:</h3>
+                  <p class="note-text">
+                      The drone race will allow mini-drones only. The drone that completes 
+                      the obstacle course in the shortest time will be declared the winner. 
+                      This same timing-based competition structure applies to all robot challenges.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<style>
+  /* Add to existing CSS */
+  .rules-section {
+      padding: 4rem 5%;
+      min-height: 100vh;
+  }
+
+  .rules-container {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .rules-card {
+      background: var(--dark-gray);
+      border-radius: 15px;
+      padding: 2rem;
+      border: 2px solid var(--neon-purple);
+      box-shadow: 0 0 25px rgba(144, 0, 255, 0.2);
+      position: relative;
+      animation: fadeUp 0.8s ease;
+  }
+
+  .rules-list {
+      counter-reset: rule-counter;
+      padding-left: 2rem;
+  }
+
+  .rule-item {
+      position: relative;
+      margin-bottom: 1.5rem;
+      padding-left: 2.5rem;
+      line-height: 1.6;
+  }
+
+  .rule-item::before {
+      counter-increment: rule-counter;
+      content: counter(rule-counter) ".";
+      position: absolute;
+      left: 0;
+      color: var(--neon-blue);
+      font-weight: bold;
+      text-shadow: 0 0 10px var(--neon-blue);
+  }
+
+  .rules-note {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: rgba(144, 0, 255, 0.1);
+      border-left: 4px solid var(--neon-purple);
+      border-radius: 8px;
+  }
+
+  .note-title {
+      color: var(--neon-blue);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+  }
+
+  .note-text {
+      line-height: 1.6;
+      color: #ddd;
+  }
+
+  @media (max-width: 768px) {
+      .rules-card {
+          padding: 1.5rem;
+      }
+      
+      .rule-item {
+          padding-left: 2rem;
+          font-size: 0.95rem;
+      }
+  }
+</style> <!-- Paste the rules content from previous implementation here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Add footer if needed -->
+
+    <script src="scripts.js"></script>
+</body>
+</html>
